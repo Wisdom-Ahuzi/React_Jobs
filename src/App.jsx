@@ -12,6 +12,11 @@ import EditJobPage from './pages/EditJobPage'
 
 const App = () => {
 
+
+
+
+
+
   // Add New Job
   const addJob = async (newJob) => {
     const res = await fetch(`/api/jobs`, {
