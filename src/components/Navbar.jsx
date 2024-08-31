@@ -101,7 +101,7 @@ const Navbar = () => {
                             <div className="absolute py-2 right-0 mt-3 w-56 bg-white border border-gray-200 shadow-lg rounded-md">
                                 <ul>
                                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                        <NavLink to="/">My Profile</NavLink>
+                                        <NavLink to="/myprofile">My Profile</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                         <NavLink to="/">Sign Out</NavLink>

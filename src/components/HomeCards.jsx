@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { FaBuilding, FaMapMarkerAlt, FaDollarSign, FaHeart, FaBookmark } from 'react-icons/fa';
 
 import Card from './Card'
-import { Briefcase, Heart } from '@phosphor-icons/react';
+import { Briefcase, Heart, Share } from '@phosphor-icons/react';
 
 const HomeCards = ({ }) => {
 
@@ -64,7 +64,12 @@ const HomeCards = ({ }) => {
                     </div>
 
                     {/* Date */}
-                    <p className="text-gray-500">{job.type}</p>
+                    <div className='flex items-center w-24 justify-between '>
+                        <p className="text-gray-500 ">{job.type}</p>
+                        <Link to={`/jobs/${job.id}`}>
+                            <Share />
+                        </Link>
+                    </div>
                 </div>
                 <div className="flex flex-col items-center space-y-4">
                     <Briefcase size={44} />
